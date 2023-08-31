@@ -7,24 +7,72 @@
     <title>ElectroGenius</title>
 </head>
 <body>
-    <script src="main.js"></script>
     <header>
         <nav>
-            <ul class="nav-rigth">
+            <ul class="nav-left">
                 <li><img src="./logos/logo_yard_sale.svg" alt="logo ElectroGenius"></li>
                 <li>All</li>
                 <li>Clothes</li>
                 <li>Electronics</li>
-                <li>Furnitures</li>
+                <li>Furniture</li>
                 <li>Toys</li>
                 <li>Others</li>
             </ul>
-            <ul>
-                <li>luislp1800@gmail.com</li>
-                <li><img src="./icons/icon_shopping_cart.svg" alt="carrito de compras"></li>
-                <div class="nav-carrito-numero">2</div>
+            <ul class="nav-right">
+                <li id="navbar-email">luislp1800@gmail.com</li>
+                <li id="navbar-cart">
+                  <img src="./icons/icon_shopping_cart.svg" alt="carrito de compras">
+                  <span class="nav-carrito-numero">2</span>
+                </li>
             </ul>
         </nav>
+        <div class="desktop-menu">
+            <ul>
+                <li>Mis órdenes</li>
+                <li>Mi cuenta</li>
+                <li><a href="#">Desconectar</a></li>
+            </ul>
+        </div>
+        <aside class="shopping-cart-container">
+            <section class="shopping-title">
+                <h2>Mis órdenes</h2>
+            </section>
+            <section class="my-order-content">
+                <article class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="notebook HP">
+                    </figure>
+                    <span class="shopping-cart-product-name">Notebook gamer</span>
+                    <p class="shopping-cart-product-price">$850.000</p>
+                    <img src="./icons/icon_close.png" alt="eliminar producto">
+                </article>
+                <article class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="notebook HP">
+                    </figure>
+                    <span class="shopping-cart-product-name">Monitor curvo</span>
+                    <p class="shopping-cart-product-price">$400.000</p>
+                    <img src="./icons/icon_close.png" alt="eliminar producto">
+                </article>
+                <article class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="notebook HP">
+                    </figure>
+                    <span class="shopping-cart-product-name">Galaxy s11+</span>
+                    <p class="shopping-cart-product-price">$1.250.000</p>
+                    <img src="./icons/icon_close.png" alt="eliminar producto">
+                </article>
+                <div class="shopping-cart-total">
+                    <p>Total</p>
+                    <p>$3.000.000</p>
+                </div>
+                <button class="shopping-cart-button-checkout">Verificar</button>
+            </section>
+        </aside>
     </header>
+    <main class="main-container">
+        <aside class="product-details"></aside>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
