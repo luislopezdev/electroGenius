@@ -9,17 +9,18 @@
 <body>
     <header>
         <nav>
+            <img class="img-inactive" src="./icons/icon_menu.svg" alt="menu">
             <ul class="nav-left">
                 <li><img src="./logos/logo_yard_sale.svg" alt="logo ElectroGenius"></li>
-                <li>All</li>
-                <li>Clothes</li>
-                <li>Electronics</li>
-                <li>Furniture</li>
-                <li>Toys</li>
-                <li>Others</li>
-            </ul>
+                <li class="nav-inactive">All</li>
+                <li class="nav-inactive">Clothes</li>
+                <li class="nav-inactive">Electronics</li>
+                <li class="nav-inactive">Furniture</li>
+                <li class="nav-inactive">Toys</li>
+                <li class="nav-inactive">Others</li>
+            </ul> 
             <ul class="nav-right">
-                <li id="navbar-email">luislp1800@gmail.com</li>
+                <li id="navbar-email" class="nav-inactive">luislp1800@gmail.com</li>
                 <li id="navbar-cart">
                   <img src="./icons/icon_shopping_cart.svg" alt="carrito de compras">
                   <span class="nav-carrito-numero">2</span>
@@ -71,7 +72,9 @@
         </aside>
     </header>
     <main class="main-container">
-        <aside class="product-details"></aside>
+        <aside class="product-details-container">
+            <div class="product-details"></div>
+        </aside>
     </main>
     <script src="main.js"></script>
 </body>
