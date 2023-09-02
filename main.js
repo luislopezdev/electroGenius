@@ -138,3 +138,10 @@ const product_info_name = document.createElement('p');
  product_info_description.innerHTML = 'With its practical position, this bike also fulfills a decorative function, add your hall or workspace.';
  product_details_container.prepend(product_info_img);
  product_details.append(product_info_price,product_info_name,product_info_description,product_info_btn_add_to_cart);
+ //barra de categorias mobile
+ const img_inactive = document.querySelector('.img-inactive');
+const nav_mobile = document.querySelector('.nav-mobile');
+
+ img_inactive.addEventListener('click',()=>{
+    nav_mobile.classList.toggle('nav-mobile-inactive');
+ });

@@ -243,11 +243,47 @@ main{
 .img-inactive{
     display: none;
 }
+/*Barra de navegacion mobile*/
+.nav-mobile{
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    left: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 24px 0 0 24px;
+    height: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+.nav-mobile-inactive{
+    display: block;
+}
+.nav-mobile-categories{
+    border-bottom: 1px solid #c7c7c7;
+}
+.nav-mobile ul li{
+    list-style-type: none;
+    display: block;
+    padding: 12px 0;
+    color:#000;
+    font-weight: 400;
+}
+.nav-mobile-profile li:nth-child(4){
+    color: #acd9b2;
+}
+.nav-mobile-profile li:nth-child(3){
+    color: #c7c7c7;
+    font-weight: 100;
+}
 @media screen and (min-width:1px) and (max-width:886px) {
     .nav-inactive{
         display: none;
     }
     .img-inactive{
         display: block;
+    }
+    .shopping-cart-container{
+        width: 100%;
     }
 }
